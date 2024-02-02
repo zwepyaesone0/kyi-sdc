@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Kyi SDC | Standing Desks</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- navbar -->
+      <nav class="navbar">
+        <section class="nav-center">
+          <!-- nav-left -->
+          <div class="nav-left">
+            <button class="toggle-btn">
+              <img src="./images/icon-menu.svg" alt="toggle-menu" />
+            </button>
+
+            <!-- sidebar -->
+            <aside class="sidebar">
+              <header class="sidebar-header">
+                <button class="close-btn">
+                  <img src="./images/icon-close.svg" alt="close-btn" />
+                </button>
+              </header>
+              <ul class="nav-links">
+                <li>
+                  <a href="index.html" class="nav-link">Kyi SDC</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" style="display: flex"
+                    >Rising Desks
+                    <img src="/images/chevron-down.svg" alt="chevron-down" />
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="products.html">Convertible</a></li>
+                    <li><a href="products.html">Electric</a></li>
+                  </ul>
+                </li>
+                <li><a href="contactUs.html" class="nav-link active">Contact Us</a></li>
+                <li><a href="healthBenefits.html" class="nav-link">Health Benefits</a></li>
+              </ul>
+            </aside>
+            <!-- end of sidebar -->
+          </div>
+
+          <!-- nav-right -->
+          <div class="nav-right">
+            <button class="cart-btn">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <span class="amount-product-cart">11</span>
+            </button>
+          </div>
+
+          <!-- cart -->
+          <aside class="cart">
+            <header class="cart-header">
+              <p>cart</p>
+            </header>
+            <div class="separator"></div>
+            <!-- cart content -->
+            <p class="empty-alert">Your cart is empty.</p>
+            <section class="cart-content">
+              <!-- cart products -->
+              <div class="cart-products"></div>
+              <!-- cart btn -->
+              <button class="btn checkout">checkout</button>
+            </section>
+          </aside>
+          <!-- end of cart -->
+        </section>
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- contact section  -->
+
+      <section class="contact section-spacing" id="contact">
+        <div class="container">
+          <header class="section-name-wrapper">
+            <div class="section-name mark">Contact Us</div>
+          </header>
+          <p class="contact__subtitle">We'd love to hear from you!</p>
+          <div class="contact-wrapper js-contactWrapper">
+            <div class="contact-wrapper-top">
+              <button
+                class="contact__header js-contactButton is-show"
+                type="button"
+                data-name="reach-us"
+              >
+                Reach Us
+              </button>
+              <button
+                class="contact__header js-contactButton"
+                type="button"
+                data-name="about-us"
+              >
+                About Us
+              </button>
+            </div>
+            <div class="contact-wrapper-bottom">
+              <div
+                class="contact__content contact__content--form js-contactContent is-show"
+                data-name="reach-us"
+              >
+                <figure>
+                  <img
+                    src="images/reachus.jpg"
+                    alt="reach us image"
+                  />
+                </figure>
+                <form method="GET" action="/index.html" class="form">
+                  <label class="form__label" for="name">Your name</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="name"
+                    required=""
+                    placeholder="Enter your name"
+                    maxlength="34"
+                  />
+                  <label class="form__label" for="email">Your email</label>
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required=""
+                    placeholder="Enter your email"
+                  />
+                  <label class="form__label" for="message">Your message</label>
+                  <textarea
+                    class="form__input"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    required=""
+                    placeholder="Enter your message"
+                  ></textarea>
+                  <button
+                    class="button--primary"
+                    type="submit"
+                    aria-label="Submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+              <div
+                class="contact__content contact__content--about js-contactContent"
+                data-name="about-us"
+              >
+                <div class="about">
+                  <p class="about__title">Who are we?</p>
+                  <p class="about__desc">
+                    At KYI, we stand tall as more than just a standing desk company; we are architects of innovation, creators of wellness workspaces, and champions of a healthier, more productive you.
+                    <br />
+                    Embrace the elevation – KYI is not just about desks; it's about uplifting your work and well-being.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of contact section -->
+
+      <!-- modal lightbox -->
+      <section class="modal">
+        <!-- image gallery -->
+        <div class="images-gallery">
+          <!-- main image -->
+          <figcaption class="main-image-modal">
+            <!-- close button -->
+            <button class="close-modal">
+              <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <!--prev button -->
+            <button class="prev-btn">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 1 3 9l8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <img
+              src="./images/products/MigrationSE/standing_desk_1.jpg"
+              alt="image product 1"
+              class="main img"
+            />
+            <!--next button -->
+            <button class="next-btn">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m2 1 8 8-8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </figcaption>
+          <!-- gallery thumbnails for desktop -->
+          <div class="images-thumbnails">
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/products/MigrationSE/standing_desk_1.jpg"
+                alt="image thumbnails 1"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/products/MigrationSE/standing_desk_2.jpg"
+                alt="image thumbnails 2"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/products/MigrationSE/standing_desk_3.jpg"
+                alt="image thumbnails 3"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/products/MigrationSE/standing_desk_4.jpg"
+                alt="image thumbnails 4"
+                class="img thumb"
+              />
+            </figcaption>
+          </div>
+        </div>
+      </section>
+      <!-- end of modal lightbox -->
+    </main>
+    <footer class="footer section-spacing">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__rights">
+            In-store pricing may vary. Prices and offers are subject to change.
+            © <time class="js-footerDate">2024</time> Kyi SDC. All rights
+            reserved.
+          </div>
+          <div class="footer__social-media">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./images/facebook-icon.png" alt="Facebook" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./images/twitter-icon.png" alt="Twitter" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./images/instagram-icon.png" alt="Instagram" />
+            </a>
+            <!-- Add more social media links as needed -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./app.js"></script>
+    <script src="./src/countdown.js"></script>
+    <script src="./src/faqs.js"></script>
+    <script src="./src/contact.js"></script>
+  </body>
+</html>

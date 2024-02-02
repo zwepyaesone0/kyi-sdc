@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    >
+    <title>Kyi SDC | Standing Desks</title>
+    <link rel="stylesheet" href="./styles.css" >
+  </head>
+
+  <body>
+    <main>
+      <!-- navbar -->
+      <nav class="navbar">
+        <section class="nav-center">
+          <!-- nav-left -->
+          <div class="nav-left">
+            <button class="toggle-btn">
+              <img src="./images/icon-menu.svg" alt="toggle-menu" >
+            </button>
+
+            <!-- sidebar -->
+            <aside class="sidebar">
+              <header class="sidebar-header">
+                <button class="close-btn">
+                  <img src="./images/icon-close.svg" alt="close-btn" >
+                </button>
+              </header>
+              <ul class="nav-links">
+                <li>
+                  <a href="index.html" class="nav-link active">Kyi SDC</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" style="display: flex"
+                    >Rising Desks
+                    <img src="/images/chevron-down.svg" alt="chevron-down" />
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="products.html">Convertible</a></li>
+                    <li><a href="products.html">Electric</a></li>
+                  </ul>
+                </li>
+                <li><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+                <li><a href="healthBenefits.html" class="nav-link">Health Benefits</a></li>
+              </ul>
+            </aside>
+            <!-- end of sidebar -->
+          </div>
+
+          <!-- nav-right -->
+          <div class="nav-right">
+            <button class="cart-btn">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <span class="amount-product-cart">11</span>
+            </button>
+          </div>
+
+          <!-- cart -->
+          <aside class="cart">
+            <header class="cart-header">
+              <p>cart</p>
+            </header>
+            <div class="separator"></div>
+            <!-- cart content -->
+            <p class="empty-alert">Your cart is empty.</p>
+            <section class="cart-content">
+              <!-- cart products -->
+              <div class="cart-products"></div>
+              <!-- cart btn -->
+              <button class="btn checkout">checkout</button>
+            </section>
+          </aside>
+          <!-- end of cart -->
+        </section>
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- showcase section -->
+      <section class="showcase section-spacing js-showcase">
+        <div class="container">
+          <div class="showcase-wrapper">
+            <div class="announcement">
+              <div class="announcement__title">Special for you</div>
+              <p class="announcement__subtitle">
+                Discover a healthier you with our new standing desks collection!
+              </p>
+            </div>
+            <div class="featured">
+              <div class="featured-wrapper">
+                <div
+                  class="featured__item-container featured__item-container--left"
+                >
+                  <figure class="featured__item">
+                    <img
+                      class="featured__item__image"
+                      src="images/products/Flash/standing_desk_1.jpg"
+                      alt="Product Image"
+                    />
+                    <a href="products.html"
+                      class="button showcase-button animate-btn"
+                      type="button"
+                      aria-label="Discover Sunglasses"
+                      data-name="sunglasses"
+                    >
+                      Convertible Desks
+                  </a>
+                  </figure>
+                  <figure class="featured__item">
+                    <img
+                      class="featured__item__image"
+                      src="images/products/Koble/standing_desk_4.jpg"
+                      alt="Product Image"
+                    />
+                    <a href="products.html"
+                      class="button showcase-button animate-btn"
+                      type="button"
+                      aria-label="Discover Trousers"
+                      data-name="trousers"
+                    >
+                      Electric Desks
+                  </a>
+                  </figure>
+                </div>
+                <div
+                  class="featured__item-container featured__item-container--right"
+                >
+                  <figure class="featured__item">
+                    <img
+                      class="featured__item__image"
+                      src="images/products/Koble/standing_desk_1.jpg"
+                      alt="Product Image"
+                    />
+                    <a href="products.html"
+                      class="button showcase-button animate-btn"
+                      type="button"
+                      aria-label="All Necklaces"
+                      data-name="necklace"
+                    >
+                      Adjustable Standing Desks
+                  </a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of showcase section -->
+
+      <!--Card products-->
+      <section class="card-section section-spacing">
+
+        <div class="card">
+          <img src="images/products/MigrationSE/standing_desk_2.jpg" alt="Product 1">
+          <h3>Migration SE Adjustable Height</h3>
+          
+          <a href="products.html" class="button showcase-button animate-btn"
+              type="button" > View Details </a>
+      </div>
+  
+      <div class="card">
+          <img src="images/products/Insignia/standing_desk_1.jpg" alt="Product 2">
+          <h3>Insignia™ 1-Drawer Standing Desk</h3>
+          <a href="products.html" class="button showcase-button animate-btn"
+              type="button" > View Details </a>
+      </div>
+
+      <div class="card">
+        <img src="images/products/Flash/standing_desk_1.jpg" alt="Product 3">
+        <h3>Fairway Modern Laminate</h3>
+        <a href="products.html" class="button showcase-button animate-btn"
+              type="button" > View Details </a>
+      </div>
+
+      <div class="card">
+        <img src="images/products/Koble/standing_desk_3.jpg" alt="Product 4">
+        <h3>Daneé 60'' Height Adjustable Desk</h3>
+        <a href="products.html" class="button showcase-button animate-btn"
+              type="button" > View Details </a>
+      </div>
+
+      <div class="card">
+        <img src="images/products/Serta/standing_desk_1.jpg" alt="Product 5">
+        <h3>Serta Creativity Electric</h3>
+        <a href="products.html" class="button showcase-button animate-btn"
+              type="button" > View Details </a>
+      </div>
+
+      <div class="card">
+        <img src="images/products/Serta/standing_desk_2.jpg" alt="Product 6">
+        <h3>Serta Modern Desk </h3>
+        <a href="products.html" class="button showcase-button animate-btn"
+              type="button" > View Details </a>
+      </div>
+
+      <div class="card">
+        <img src="images/products/Serta/standing_desk_3.jpg" alt="Product 7">
+        <h3>ErGear L Shaped Desk </h3>
+        <a href="products.html" class="button showcase-button animate-btn"
+              type="button" > View Details </a>
+      </div>
+
+      <div class="card">
+        <img src="images/products/Serta/standing_desk_4.jpg" alt="Product 8">
+        <h3>Monomi Height Adjustable Desk</h3>
+        <a href="products.html" class="button showcase-button animate-btn"
+              type="button" > View Details </a>
+      </div>
+
+        
+      </section>
+      <!--end of card products-->
+
+      <!-- countdown section -->
+      <section class="countdown countdown-section js-countdown">
+        <div class="container">
+          <div class="countdown-wrapper">
+            <div class="countdown__text-wrapper">
+              <div class="countdown__text">
+                Get
+                <span class="countdown__text--highlighted">50% Off </span>Before
+                It's too Late!<br />
+              </div>
+              <div
+                class="countdown__text countdown__text--secondary js-endDate"
+              >
+                Offer ends on <time>Thursday, 11 January 2024 9:14</time>
+              </div>
+            </div>
+            <div class="countdown__box-wrapper js-countdown">
+              <div class="countdown__box">
+                <div class="countdown__box__time js-countdownValue">11</div>
+                <div class="countdown__box__text">days</div>
+              </div>
+              <div class="countdown__box">
+                <div class="countdown__box__time js-countdownValue">17</div>
+                <div class="countdown__box__text">hours</div>
+              </div>
+              <div class="countdown__box">
+                <div class="countdown__box__time js-countdownValue">42</div>
+                <div class="countdown__box__text">mins</div>
+              </div>
+              <div class="countdown__box">
+                <div class="countdown__box__time js-countdownValue">19</div>
+                <div class="countdown__box__text">secs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of countdown section -->
+
+      <!-- Easy Setup section -->
+      <section class="health section-spacing" id="health">
+        <div class="container">
+          <header class="section-name-wrapper">
+            <div class="section-name mark">Easy to setup</div>
+          </header>
+          <div class="health-container">
+            <div class="health-wrapper js-healthWrapper">
+              <div class="easytosetup__content">
+                <video
+                  width="560"
+                  height="315"
+                  controls
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source src="images/standingdesk.mp4" type="video/mp4">
+              </video>
+                <div class="text-content">
+                  <h3>Quick and Simple Setup</h3>
+                  <ol>
+                    <li>Unbox your standing desk components.</li>
+                    <li>Assemble the desk following the provided instructions.</li>
+                    <li>Adjust the desk to your preferred height.</li>
+                    <li>Enjoy the benefits of a comfortable and ergonomic workspace!</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--end of easy to setup section-->
+
+      <!--Health Benefits section-->
+
+      <section class="health section-spacing" id="health">
+        <div class="container">
+          <header class="section-name-wrapper">
+            <div class="section-name mark">Health Benefits</div>
+          </header>
+          <div class="health-container">
+            <div class="health-wrapper js-healthWrapper">
+              <div class="health__content">
+                <figure>
+                  <img
+                    src="images/health-benefits/health-benefits-1.jpg"
+                    alt="Health Benefit image 1"
+                  />
+                </figure>
+                <div class="text-content">
+                  <h3>Raises Productivity</h3>
+                  <h4>
+                    If you are in a good mood and don’t feel back, neck, or
+                    shoulder pains, focusing on your task at hand becomes
+                    considerably easier.
+                  </h4>
+                </div>
+              </div>
+              
+              <div class="health__content">
+                <figure>
+                  <img
+                    src="images/health-benefits/health-benefits-3.jpg"
+                    alt="Health Benefit image 3"
+                  />
+                </figure>
+                <div class="text-content">
+                  <h3>Improves Mood and Increases Energy</h3>
+                  <h4>
+                    The mental health benefit of a standing desk, along with the
+                    physical advantages, become numerous when you begin a
+                    regular sit-stand session schedule. It provides significant
+                    relief to your body, helps you prevent fatigue, and reduces
+                    the psychological distress you feel on those tough days.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--end of health benefits section-->
+
+      <!-- FAQ Section -->
+      <section class="faqs section-spacing" id="faqs">
+        <div class="container">
+          <header class="section-name-wrapper">
+            <div class="section-name mark">FAQ's</div>
+          </header>
+          <div class="faqs-container">
+            <div class="faqs-wrapper js-faqsWrapper">
+              <button
+                class="faqs__question js-faqsQuestion is-show"
+                type="button"
+                aria-label="FAQ's Questions"
+              >
+                <p class="faqs__question__title">
+                  How much money should I pay for delivery?
+                </p>
+                <div class="faqs__question__icon">
+                  <img src="/images/chevron-down.svg" alt="down" />
+                </div>
+              </button>
+              <div class="faqs__answer">
+                You don't have to pay for delivery. It's totally free!
+              </div>
+            </div>
+            <div class="faqs-wrapper js-faqsWrapper">
+              <button
+                class="faqs__question js-faqsQuestion"
+                type="button"
+                aria-label="FAQ's Questions"
+              >
+                <p class="faqs__question__title">
+                  How many days should I wait before reaching you?
+                </p>
+                <div class="faqs__question__icon">
+                  <img src="/images/chevron-down.svg" alt="down" />
+                </div>
+              </button>
+              <div class="faqs__answer">
+                It is enough to wait 3-7 days for the delivery.
+              </div>
+            </div>
+            <div class="faqs-wrapper js-faqsWrapper">
+              <button
+                class="faqs__question js-faqsQuestion"
+                type="button"
+                aria-label="FAQ's Questions "
+              >
+                <p class="faqs__question__title">Do you have refund policy?</p>
+                <div class="faqs__question__icon">
+                  <img src="/images/chevron-down.svg" alt="down" />
+                </div>
+              </button>
+              <div class="faqs__answer">Yes, we have.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of FAQ section -->
+
+  
+      <!-- modal lightbox -->
+      <section class="modal">
+        <!-- image gallery -->
+        <div class="images-gallery">
+          <!-- main image -->
+          <figcaption class="main-image-modal">
+            <!-- close button -->
+            <button class="close-modal">
+              <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <!--prev button -->
+            <button class="prev-btn">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 1 3 9l8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <img
+              src="./images/products/MigrationSE/standing_desk_1.jpg"
+              alt="image product 1"
+              class="main img"
+            />
+            <!--next button -->
+            <button class="next-btn">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m2 1 8 8-8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </figcaption>
+          <!-- gallery thumbnails for desktop -->
+          <div class="images-thumbnails">
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/products/MigrationSE/standing_desk_1.jpg"
+                alt="image thumbnails 1"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/products/MigrationSE/standing_desk_2.jpg"
+                alt="image thumbnails 2"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/products/MigrationSE/standing_desk_3.jpg"
+                alt="image thumbnails 3"
+                class="img thumb"
+              />
+            </figcaption>
+            <figcaption class="thumbnails-image">
+              <img
+                src="./images/products/MigrationSE/standing_desk_4.jpg"
+                alt="image thumbnails 4"
+                class="img thumb"
+              />
+            </figcaption>
+          </div>
+        </div>
+      </section>
+      <!-- end of modal lightbox -->
+    </main>
+    <footer class="footer section-spacing">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__rights">
+            In-store pricing may vary. Prices and offers are subject to change.
+            © <time class="js-footerDate">2024</time> Kyi SDC. All rights
+            reserved.
+          </div>
+          <div class="footer__social-media">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./images/facebook-icon.png" alt="Facebook" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./images/twitter-icon.png" alt="Twitter" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./images/instagram-icon.png" alt="Instagram" />
+            </a>
+            <!-- Add more social media links as needed -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./app.js"></script>
+    <script src="./src/countdown.js"></script>
+    <script src="./src/faqs.js"></script>
+    <script src="./src/contact.js"></script>
+  </body>
+</html>
